@@ -77,7 +77,7 @@ BEGIN
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + 'seconds';
 		PRINT '>> -------------';
 
-
+                SET @batch_start_time = GETDATE();
 		PRINT '------------------------------';
 		PRINT 'Loading ERP Tables'
 		PRINT '------------------------------';
